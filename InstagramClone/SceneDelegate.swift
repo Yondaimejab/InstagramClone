@@ -17,6 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        window?.rootViewController = SceneDelegate.getTabbarController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -50,3 +51,64 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+extension SceneDelegate {
+    static func getTabbarController() -> UIViewController {
+        // Home items
+        let homeStoryBoard = UIStoryboard(name: "Home", bundle: Bundle.main)
+        let homeViewController = homeStoryBoard.instantiateViewController(identifier: "home")
+
+        // search items
+        let searchStoryBoard = UIStoryboard(name: "Search", bundle: Bundle.main)
+        let searchViewController = searchStoryBoard.instantiateViewController(identifier: "search")
+
+        // newPost
+        let newPostStoryBoard = UIStoryboard(name: "NewPost", bundle: Bundle.main)
+        let newPostViewController = newPostStoryBoard.instantiateViewController(identifier: "newPost")
+
+        // activity
+        let activityStoryBoard = UIStoryboard(name: "Activity", bundle: Bundle.main)
+        let activityViewController = activityStoryBoard.instantiateViewController(withIdentifier: "activity")
+
+        //Profile
+        let profileStoryBoard = UIStoryboard(name: "Profile", bundle: Bundle.main)
+        let profileViewController = profileStoryBoard.instantiateViewController(withIdentifier: "profile")
+
+        let tabbarViewControllers: [(viewController: UIViewController, icon: UIImage, selectedIcon: UIImage)] = [
+            (homeViewController, UIImage(named: "home_tab_icon")!, UIImage(named: "home_selected_tab_icon")!),
+            (searchViewController, UIImage(named: "search_tab_icon")!, UIImage(named: "search_selected_tab_icon")!),
+            (newPostViewController, UIImage(named: "post_tab_icon")!, UIImage(named: "post_tab_icon")!),
+            (activityViewController, UIImage(named: "activity_tab_icon")!, UIImage(named: "activity_selected_tab_icon")!),
+            (profileViewController, UIImage(named: "profile_tab_icon")!, UIImage(named: "profile_selected_tab_icon")!)
+        ]
+
+        let navigationControllers = tabbarViewControllers.map { (navigationItem) -> UINavigationController in
+            let navigationController = UINavigationController(rootViewController: navigationItem.viewController)
+            navigationController.tabBarItem.image = navigationItem.icon
+            navigationController.tabBarItem.selectedImage = navigationItem.selectedIcon
+            return navigationController
+        }
+
+        let tabbarController = UITabBarController()
+        tabbarController.viewControllers = navigationControllers
+        tabbarController.tabBar.isTranslucent = false
+
+        if let items = tabbarController.tabBar.items {
+            for item in items {
+                if let image = item.image {
+                    item.image = image.withRenderingMode(.alwaysOriginal)
+                }
+
+                if let selectedImage = item.selectedImage {
+                    item.image = selectedImage.withRenderingMode(.alwaysOriginal)
+                }
+
+                item.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+            }
+        }
+
+        UINavigationBar.appearance().backgroundColor = .white
+
+        return tabbarController
+    }
+}
