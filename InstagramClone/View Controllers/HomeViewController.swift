@@ -30,10 +30,8 @@ class HomeViewController: UIViewController {
 
     // Properties
     @IBOutlet weak var homeCollectionView: UICollectionView!
+    var homeViewModel = HomeControllerViewModel()
     private var dataSource: PostDataSource!
-    var postList = PostRequest.getPost()
-    var stories = StoryRequest.getStory()
-    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +43,7 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        updateDataSource(with: stories, and: postList)
+        updateDataSource(with: homeViewModel)
     }
 
     private func setupViews() {
@@ -128,24 +126,15 @@ class HomeViewController: UIViewController {
         })
     }
 
-    private func updateDataSource(with storyList: [Story] = .init(), and postList: [Post] = .init()) {
+    private func updateDataSource(with viewModel: HomeControllerViewModel) {
         var snapShot = NSDiffableDataSourceSnapshot<Sections, HomeCollectionViewRepresentable>()
-
         snapShot.appendSections([.main, .secundary])
 
-        let firstSectionItems = storyList.map({ (story) -> HomeCollectionViewRepresentable in
-            HomeCollectionViewRepresentable.story(story)
-        })
-
-        let secondSectionItems = postList.map({ (post) -> HomeCollectionViewRepresentable in
-            HomeCollectionViewRepresentable.post(post)
-        })
-
-        snapShot.appendItems(firstSectionItems, toSection: .main)
-        
-        snapShot.appendItems(secondSectionItems, toSection: .secundary)
+        snapShot.appendItems(viewModel.listStoryRepresentable(), toSection: .main)
+        snapShot.appendItems(viewModel.listPostRepresentable(), toSection: .secundary)
 
         dataSource.apply(snapShot)
     }
+    
 
 }

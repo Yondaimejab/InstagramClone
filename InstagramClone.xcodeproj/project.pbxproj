@@ -11,6 +11,7 @@
 		5D60C49A25E3047100B3A8EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C49925E3047100B3A8EA /* User.swift */; };
 		5D60C49D25E306D200B3A8EA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C49C25E306D200B3A8EA /* Data+Extension.swift */; };
 		5D60C4A125E30D5C00B3A8EA /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C4A025E30D5C00B3A8EA /* UIImageView+Extension.swift */; };
+		5D60C4AD25E3510200B3A8EA /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C4AC25E3510100B3A8EA /* HomeControllerViewModel.swift */; };
 		5DA03DB425E16E32000C8140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA03DB325E16E32000C8140 /* AppDelegate.swift */; };
 		5DA03DB625E16E32000C8140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA03DB525E16E32000C8140 /* SceneDelegate.swift */; };
 		5DA03DB825E16E32000C8140 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA03DB725E16E32000C8140 /* HomeViewController.swift */; };
@@ -39,6 +40,7 @@
 		5D60C49925E3047100B3A8EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D60C49C25E306D200B3A8EA /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		5D60C4A025E30D5C00B3A8EA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		5D60C4AC25E3510100B3A8EA /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
 		5DA03DB025E16E32000C8140 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA03DB325E16E32000C8140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA03DB525E16E32000C8140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D60C4AA25E350DF00B3A8EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D60C4AC25E3510100B3A8EA /* HomeControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5DA03DA725E16E32000C8140 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 				5DA03DB525E16E32000C8140 /* SceneDelegate.swift */,
 				5DDFB8D825E1998000EE5F3E /* Services */,
 				5DA03DC825E1707D000C8140 /* Model */,
+				5D60C4AA25E350DF00B3A8EA /* ViewModel */,
 				5DA03DC925E17081000C8140 /* View Controllers */,
 				5DA03DCA25E17091000C8140 /* Custom Views */,
 				5DC5329225E173370098D983 /* Storyboards */,
@@ -282,6 +293,7 @@
 				5DC532B225E1745C0098D983 /* ProfileViewController.swift in Sources */,
 				5D60C49A25E3047100B3A8EA /* User.swift in Sources */,
 				5DDFB8F425E1AF1700EE5F3E /* UIView+Extension.swift in Sources */,
+				5D60C4AD25E3510200B3A8EA /* HomeControllerViewModel.swift in Sources */,
 				5DA03DB625E16E32000C8140 /* SceneDelegate.swift in Sources */,
 				5DDFB8F025E19CDE00EE5F3E /* PostCollectionViewCell.swift in Sources */,
 				5DDFB8DA25E199A200EE5F3E /* PostRequest.swift in Sources */,
