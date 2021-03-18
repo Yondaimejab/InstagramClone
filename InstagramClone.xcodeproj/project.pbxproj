@@ -18,6 +18,8 @@
 		5DA03DBD25E16E33000C8140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA03DBC25E16E33000C8140 /* Assets.xcassets */; };
 		5DA03DC025E16E33000C8140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA03DBE25E16E33000C8140 /* LaunchScreen.storyboard */; };
 		5DA03DCC25E17208000C8140 /* Library in Resources */ = {isa = PBXBuildFile; fileRef = 5DA03DCB25E17208000C8140 /* Library */; };
+		5DAAA5D225E67F01009D98FB /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAAA5D125E67F01009D98FB /* ExploreCollectionViewCell.swift */; };
+		5DAAA5D525E68102009D98FB /* SearchBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAAA5D425E68102009D98FB /* SearchBarContainerView.swift */; };
 		5DC5329725E173990098D983 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC5329625E173990098D983 /* Home.storyboard */; };
 		5DC5329A25E173A10098D983 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC5329925E173A10098D983 /* Search.storyboard */; };
 		5DC5329E25E173BB0098D983 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC5329D25E173BB0098D983 /* Activity.storyboard */; };
@@ -49,6 +51,8 @@
 		5DA03DBF25E16E33000C8140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DA03DC125E16E33000C8140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA03DCB25E17208000C8140 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
+		5DAAA5D125E67F01009D98FB /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
+		5DAAA5D425E68102009D98FB /* SearchBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarContainerView.swift; sourceTree = "<group>"; };
 		5DC5329625E173990098D983 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		5DC5329925E173A10098D983 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		5DC5329D25E173BB0098D983 /* Activity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				5DDFB8E325E19C9100EE5F3E /* CollectionViewCells */,
+				5DAAA5D425E68102009D98FB /* SearchBarContainerView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			children = (
 				5DDFB8E425E19CB600EE5F3E /* StoryCollectionViewCell.swift */,
 				5DDFB8EE25E19CDE00EE5F3E /* PostCollectionViewCell.swift */,
+				5DAAA5D125E67F01009D98FB /* ExploreCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 				5D60C49D25E306D200B3A8EA /* Data+Extension.swift in Sources */,
 				5DDFB8DE25E19A9300EE5F3E /* StoryRequest.swift in Sources */,
 				5DC532AF25E174520098D983 /* ActivityViewController.swift in Sources */,
+				5DAAA5D525E68102009D98FB /* SearchBarContainerView.swift in Sources */,
 				5DA03DB425E16E32000C8140 /* AppDelegate.swift in Sources */,
 				5DDFB8E625E19CB600EE5F3E /* StoryCollectionViewCell.swift in Sources */,
 				5DDFB8C325E186CB00EE5F3E /* Post.swift in Sources */,
@@ -300,6 +307,7 @@
 				5DC532AC25E174460098D983 /* NewPostViewController.swift in Sources */,
 				5D60C4A125E30D5C00B3A8EA /* UIImageView+Extension.swift in Sources */,
 				5DDFB8E125E19A9D00EE5F3E /* Story.swift in Sources */,
+				5DAAA5D225E67F01009D98FB /* ExploreCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

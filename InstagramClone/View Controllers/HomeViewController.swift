@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
         case secundary
     }
 
-    //Constants
+    // Constants
 
     enum Constants {
         static let estimatedRowHeight: CGFloat = 80.0

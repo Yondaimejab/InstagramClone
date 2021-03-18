@@ -74,18 +74,37 @@ extension SceneDelegate {
         let profileStoryBoard = UIStoryboard(name: "Profile", bundle: Bundle.main)
         let profileViewController = profileStoryBoard.instantiateViewController(withIdentifier: "profile")
 
-        let tabbarViewControllers: [(viewController: UIViewController, icon: UIImage, selectedIcon: UIImage)] = [
-            (homeViewController, UIImage(named: "home_tab_icon")!, UIImage(named: "home_selected_tab_icon")!),
-            (searchViewController, UIImage(named: "search_tab_icon")!, UIImage(named: "search_selected_tab_icon")!),
-            (newPostViewController, UIImage(named: "post_tab_icon")!, UIImage(named: "post_tab_icon")!),
-            (activityViewController, UIImage(named: "activity_tab_icon")!, UIImage(named: "activity_selected_tab_icon")!),
-            (profileViewController, UIImage(named: "profile_tab_icon")!, UIImage(named: "profile_selected_tab_icon")!)
+        let tabbarViewControllers: [(UIViewController, UIImage, UIImage)] = [
+            (
+                homeViewController,
+                icon: UIImage(named: "home_tab_icon")!,
+                UIImage(named: "home_selected_tab_icon")!
+            ),
+            (
+                searchViewController,
+                UIImage(named: "search_tab_icon")!,
+                UIImage(named: "search_selected_tab_icon")!
+            ),
+            (
+                newPostViewController,
+                UIImage(named: "post_tab_icon")!,
+                UIImage(named: "post_tab_icon")!),
+            (
+                activityViewController,
+                UIImage(named: "more_icon")!,
+                UIImage(named: "activity_selected_tab_icon")!
+            ),
+            (
+                profileViewController,
+                UIImage(named: "profile_tab_icon")!,
+                UIImage(named: "profile_selected_tab_icon")!
+            )
         ]
 
-        let navigationControllers = tabbarViewControllers.map { (navigationItem) -> UINavigationController in
-            let navigationController = UINavigationController(rootViewController: navigationItem.viewController)
-            navigationController.tabBarItem.image = navigationItem.icon
-            navigationController.tabBarItem.selectedImage = navigationItem.selectedIcon
+        let navigationControllers = tabbarViewControllers.map { (viewController, icon, selectedIcon) -> UINavigationController in
+            let navigationController = UINavigationController(rootViewController: viewController)
+            navigationController.tabBarItem.image = icon
+            navigationController.tabBarItem.selectedImage = selectedIcon
             return navigationController
         }
 
