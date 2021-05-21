@@ -64,7 +64,7 @@ extension SceneDelegate {
 
         // newPost
         let newPostStoryBoard = UIStoryboard(name: "NewPost", bundle: Bundle.main)
-        let newPostViewController = newPostStoryBoard.instantiateViewController(identifier: "newPost")
+        let newPostViewController = newPostStoryBoard.instantiateViewController(identifier: "NewPost")
 
         // activity
         let activityStoryBoard = UIStoryboard(name: "Activity", bundle: Bundle.main)
@@ -127,7 +127,8 @@ extension SceneDelegate {
         }
 
         UINavigationBar.appearance().backgroundColor = .white
-
+        let delegate = TabBarDelegate()
+        tabbarController.delegate = delegate
         return tabbarController
     }
 }

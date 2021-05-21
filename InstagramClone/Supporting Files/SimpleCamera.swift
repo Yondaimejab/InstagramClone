@@ -7,7 +7,7 @@
 import AVFoundation
 
 import Photos
-
+import UIKit
 /*
  AVCaptureSession.startRunning() is a blocking call which can
  take a long time. We dispatch session setup to the sessionQueue so
@@ -661,7 +661,7 @@ class SimpleCamera: NSObject, SimpleCameraProtocol {
     fileprivate func currentVideoOrientation() -> AVCaptureVideoOrientation {
         
         var orientation: AVCaptureVideoOrientation
-        
+    
         switch UIDevice.current.orientation {
         case .portrait:
             orientation = AVCaptureVideoOrientation.portrait

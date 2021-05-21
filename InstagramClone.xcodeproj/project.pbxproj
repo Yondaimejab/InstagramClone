@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D28350426568E090020409B /* SimpleCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28350126568E090020409B /* SimpleCameraView.swift */; };
+		5D28350526568E090020409B /* SimpleCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28350226568E090020409B /* SimpleCamera.swift */; };
+		5D28350626568E090020409B /* SimpleCameraProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28350326568E090020409B /* SimpleCameraProtocol.swift */; };
+		5D28350826569C250020409B /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28350726569C250020409B /* CustomSegmentedControl.swift */; };
 		5D60C49425E2CA4900B3A8EA /* Anchorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5D60C49325E2CA4900B3A8EA /* Anchorage */; };
 		5D60C49A25E3047100B3A8EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C49925E3047100B3A8EA /* User.swift */; };
 		5D60C49D25E306D200B3A8EA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C49C25E306D200B3A8EA /* Data+Extension.swift */; };
 		5D60C4A125E30D5C00B3A8EA /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C4A025E30D5C00B3A8EA /* UIImageView+Extension.swift */; };
 		5D60C4AD25E3510200B3A8EA /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C4AC25E3510100B3A8EA /* HomeControllerViewModel.swift */; };
+		5D771A3D2654011700840EAD /* NewPostPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D771A3C2654011700840EAD /* NewPostPageViewController.swift */; };
+		5D771A402654016E00840EAD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D771A3F2654016E00840EAD /* CameraViewController.swift */; };
+		5D771A432654019400840EAD /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D771A422654019400840EAD /* PhotoLibraryViewController.swift */; };
+		5D771A45265403ED00840EAD /* TabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D771A44265403ED00840EAD /* TabBarDelegate.swift */; };
+		5D799FBB2651B6E100EFA8B8 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D799FBA2651B6E100EFA8B8 /* ExploreViewModel.swift */; };
 		5DA03DB425E16E32000C8140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA03DB325E16E32000C8140 /* AppDelegate.swift */; };
 		5DA03DB625E16E32000C8140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA03DB525E16E32000C8140 /* SceneDelegate.swift */; };
 		5DA03DB825E16E32000C8140 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA03DB725E16E32000C8140 /* HomeViewController.swift */; };
 		5DA03DBD25E16E33000C8140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA03DBC25E16E33000C8140 /* Assets.xcassets */; };
 		5DA03DC025E16E33000C8140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA03DBE25E16E33000C8140 /* LaunchScreen.storyboard */; };
-		5DA03DCC25E17208000C8140 /* Library in Resources */ = {isa = PBXBuildFile; fileRef = 5DA03DCB25E17208000C8140 /* Library */; };
 		5DAAA5D225E67F01009D98FB /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAAA5D125E67F01009D98FB /* ExploreCollectionViewCell.swift */; };
 		5DAAA5D525E68102009D98FB /* SearchBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAAA5D425E68102009D98FB /* SearchBarContainerView.swift */; };
 		5DC5329725E173990098D983 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC5329625E173990098D983 /* Home.storyboard */; };
@@ -39,10 +47,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D28350126568E090020409B /* SimpleCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCameraView.swift; sourceTree = "<group>"; };
+		5D28350226568E090020409B /* SimpleCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCamera.swift; sourceTree = "<group>"; };
+		5D28350326568E090020409B /* SimpleCameraProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCameraProtocol.swift; sourceTree = "<group>"; };
+		5D28350726569C250020409B /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		5D60C49925E3047100B3A8EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D60C49C25E306D200B3A8EA /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		5D60C4A025E30D5C00B3A8EA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		5D60C4AC25E3510100B3A8EA /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
+		5D771A3C2654011700840EAD /* NewPostPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostPageViewController.swift; sourceTree = "<group>"; };
+		5D771A3F2654016E00840EAD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5D771A422654019400840EAD /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		5D771A44265403ED00840EAD /* TabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDelegate.swift; sourceTree = "<group>"; };
+		5D799FBA2651B6E100EFA8B8 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		5DA03DB025E16E32000C8140 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA03DB325E16E32000C8140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA03DB525E16E32000C8140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +67,6 @@
 		5DA03DBC25E16E33000C8140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DA03DBF25E16E33000C8140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DA03DC125E16E33000C8140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DA03DCB25E17208000C8140 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
 		5DAAA5D125E67F01009D98FB /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
 		5DAAA5D425E68102009D98FB /* SearchBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarContainerView.swift; sourceTree = "<group>"; };
 		5DC5329625E173990098D983 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -87,8 +103,20 @@
 			isa = PBXGroup;
 			children = (
 				5D60C4AC25E3510100B3A8EA /* HomeControllerViewModel.swift */,
+				5D799FBA2651B6E100EFA8B8 /* ExploreViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D771A3E2654015A00840EAD /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				5DC532AB25E174460098D983 /* NewPostViewController.swift */,
+				5D771A3C2654011700840EAD /* NewPostPageViewController.swift */,
+				5D771A3F2654016E00840EAD /* CameraViewController.swift */,
+				5D771A422654019400840EAD /* PhotoLibraryViewController.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		5DA03DA725E16E32000C8140 = {
@@ -119,9 +147,9 @@
 				5DA03DCA25E17091000C8140 /* Custom Views */,
 				5DC5329225E173370098D983 /* Storyboards */,
 				5DC532B425E1755C0098D983 /* Supporting Files */,
-				5DA03DCB25E17208000C8140 /* Library */,
 				5DA03DBC25E16E33000C8140 /* Assets.xcassets */,
 				5DA03DBE25E16E33000C8140 /* LaunchScreen.storyboard */,
+				5D771A44265403ED00840EAD /* TabBarDelegate.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -139,9 +167,9 @@
 		5DA03DC925E17081000C8140 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5D771A3E2654015A00840EAD /* Post */,
 				5DA03DB725E16E32000C8140 /* HomeViewController.swift */,
 				5DC532A825E174390098D983 /* SearchViewController.swift */,
-				5DC532AB25E174460098D983 /* NewPostViewController.swift */,
 				5DC532AE25E174520098D983 /* ActivityViewController.swift */,
 				5DC532B125E1745C0098D983 /* ProfileViewController.swift */,
 			);
@@ -153,6 +181,7 @@
 			children = (
 				5DDFB8E325E19C9100EE5F3E /* CollectionViewCells */,
 				5DAAA5D425E68102009D98FB /* SearchBarContainerView.swift */,
+				5D28350726569C250020409B /* CustomSegmentedControl.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -172,6 +201,9 @@
 		5DC532B425E1755C0098D983 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D28350226568E090020409B /* SimpleCamera.swift */,
+				5D28350326568E090020409B /* SimpleCameraProtocol.swift */,
+				5D28350126568E090020409B /* SimpleCameraView.swift */,
 				5DC532B525E175750098D983 /* Extensions */,
 				5DA03DC125E16E33000C8140 /* Info.plist */,
 			);
@@ -270,7 +302,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DA03DCC25E17208000C8140 /* Library in Resources */,
 				5DC532A125E173D40098D983 /* NewPost.storyboard in Resources */,
 				5DC5329725E173990098D983 /* Home.storyboard in Resources */,
 				5DA03DC025E16E33000C8140 /* LaunchScreen.storyboard in Resources */,
@@ -290,10 +321,16 @@
 			files = (
 				5DA03DB825E16E32000C8140 /* HomeViewController.swift in Sources */,
 				5D60C49D25E306D200B3A8EA /* Data+Extension.swift in Sources */,
+				5D771A432654019400840EAD /* PhotoLibraryViewController.swift in Sources */,
+				5D771A3D2654011700840EAD /* NewPostPageViewController.swift in Sources */,
+				5D28350526568E090020409B /* SimpleCamera.swift in Sources */,
+				5D771A402654016E00840EAD /* CameraViewController.swift in Sources */,
 				5DDFB8DE25E19A9300EE5F3E /* StoryRequest.swift in Sources */,
 				5DC532AF25E174520098D983 /* ActivityViewController.swift in Sources */,
 				5DAAA5D525E68102009D98FB /* SearchBarContainerView.swift in Sources */,
 				5DA03DB425E16E32000C8140 /* AppDelegate.swift in Sources */,
+				5D28350426568E090020409B /* SimpleCameraView.swift in Sources */,
+				5D799FBB2651B6E100EFA8B8 /* ExploreViewModel.swift in Sources */,
 				5DDFB8E625E19CB600EE5F3E /* StoryCollectionViewCell.swift in Sources */,
 				5DDFB8C325E186CB00EE5F3E /* Post.swift in Sources */,
 				5DC532A925E174390098D983 /* SearchViewController.swift in Sources */,
@@ -304,9 +341,12 @@
 				5DA03DB625E16E32000C8140 /* SceneDelegate.swift in Sources */,
 				5DDFB8F025E19CDE00EE5F3E /* PostCollectionViewCell.swift in Sources */,
 				5DDFB8DA25E199A200EE5F3E /* PostRequest.swift in Sources */,
+				5D28350626568E090020409B /* SimpleCameraProtocol.swift in Sources */,
 				5DC532AC25E174460098D983 /* NewPostViewController.swift in Sources */,
 				5D60C4A125E30D5C00B3A8EA /* UIImageView+Extension.swift in Sources */,
+				5D771A45265403ED00840EAD /* TabBarDelegate.swift in Sources */,
 				5DDFB8E125E19A9D00EE5F3E /* Story.swift in Sources */,
+				5D28350826569C250020409B /* CustomSegmentedControl.swift in Sources */,
 				5DAAA5D225E67F01009D98FB /* ExploreCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

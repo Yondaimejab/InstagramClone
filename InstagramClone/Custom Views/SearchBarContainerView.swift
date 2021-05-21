@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Anchorage
 
 class SearchBarContainerView: UIView {
 
@@ -15,6 +16,11 @@ class SearchBarContainerView: UIView {
         searchBar = customSearchBar
         super.init(frame: .zero)
         addSubview(searchBar)
+        displayDefaultLayout()
+    }
+    
+    func displayDefaultLayout() {
+        searchBar.edgeAnchors == edgeAnchors
     }
 
     convenience override init(frame: CGRect) {

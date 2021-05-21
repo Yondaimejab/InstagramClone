@@ -24,7 +24,6 @@ struct Post: Codable, Hashable {
         return URL(string: postImageAddress)
     }
 
-
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }

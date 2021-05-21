@@ -6,19 +6,34 @@
 //
 
 import UIKit
+import Anchorage
 
 class ExploreCollectionViewCell: UICollectionViewCell {
     static let CellIdentifier = "ExploreCollectionViewCellID"
 
-    let image: UIImage? = nil
-
+    private let imageView = UIImageView()
+    
+    var itemImage: UIImage? {
+        get {
+            imageView.image
+        }
+        set {
+            if let image = newValue {
+                imageView.image = image
+            }
+        }
+    }
+    
     // MARK - Lifecicle
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-//        configure()
-//        buildInterface()
-//        setupDefaultLayout()
+        
+        displayDefaultLayout()
+    }
+    
+    private func displayDefaultLayout() {
+        self.addSubview(imageView)
+        self.imageView.edgeAnchors == edgeAnchors
     }
 
     required init?(coder: NSCoder) {
