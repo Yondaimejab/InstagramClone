@@ -16,31 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aH-wk-dGI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aH-wk-dGI" customClass="CustomSegmentedControl" customModule="InstagramClone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="8fV-2D-MWN"/>
+                                    <constraint firstAttribute="height" constant="80" id="8fV-2D-MWN"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWz-4U-9aq">
-                                <rect key="frame" x="0.0" y="112" width="414" height="784"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="A8e-cj-QUJ"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="4O0-dW-KSB"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDG-Vt-Ha3">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ds3-Kc-p9R">
+                                        <rect key="frame" x="-8" y="0.0" width="414" height="730"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="6Yx-q5-oMN"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="BJd-Hr-w8p"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ds3-Kc-p9R" firstAttribute="leading" secondItem="WDG-Vt-Ha3" secondAttribute="leading" id="GwE-zp-CuA"/>
+                                    <constraint firstAttribute="bottom" secondItem="ds3-Kc-p9R" secondAttribute="bottom" id="Vhl-iu-snI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ds3-Kc-p9R" secondAttribute="trailing" id="eYU-He-ZOc"/>
+                                    <constraint firstItem="ds3-Kc-p9R" firstAttribute="top" secondItem="WDG-Vt-Ha3" secondAttribute="top" id="wcZ-Jz-wkx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cfp-qV-sdN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9aH-wk-dGI" firstAttribute="top" secondItem="cfp-qV-sdN" secondAttribute="top" id="0co-z8-CVe"/>
                             <constraint firstItem="cfp-qV-sdN" firstAttribute="trailing" secondItem="9aH-wk-dGI" secondAttribute="trailing" id="2Hu-1p-2q1"/>
-                            <constraint firstItem="XWz-4U-9aq" firstAttribute="trailing" secondItem="cfp-qV-sdN" secondAttribute="trailing" id="Ads-mA-tmQ"/>
-                            <constraint firstItem="XWz-4U-9aq" firstAttribute="top" secondItem="9aH-wk-dGI" secondAttribute="bottom" id="Ri3-OC-NMK"/>
-                            <constraint firstItem="XWz-4U-9aq" firstAttribute="leading" secondItem="cfp-qV-sdN" secondAttribute="leading" id="c5K-dx-Nlz"/>
+                            <constraint firstItem="WDG-Vt-Ha3" firstAttribute="leading" secondItem="ZYi-ie-79n" secondAttribute="leading" id="KH4-jH-hY8"/>
+                            <constraint firstItem="cfp-qV-sdN" firstAttribute="bottom" secondItem="WDG-Vt-Ha3" secondAttribute="bottom" id="Ned-qP-mFe"/>
+                            <constraint firstAttribute="trailing" secondItem="WDG-Vt-Ha3" secondAttribute="trailing" id="NwN-Vr-x4S"/>
                             <constraint firstItem="9aH-wk-dGI" firstAttribute="leading" secondItem="cfp-qV-sdN" secondAttribute="leading" id="jGR-Cf-h9j"/>
-                            <constraint firstAttribute="bottom" secondItem="XWz-4U-9aq" secondAttribute="bottom" id="rsu-IP-DXF"/>
+                            <constraint firstItem="WDG-Vt-Ha3" firstAttribute="top" secondItem="9aH-wk-dGI" secondAttribute="bottom" id="mYJ-YG-A5G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="ds3-Kc-p9R" id="gSF-wN-9zp"/>
+                        <outlet property="segmentedControl" destination="9aH-wk-dGI" id="JWo-y2-Gxg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVs-Ly-i8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

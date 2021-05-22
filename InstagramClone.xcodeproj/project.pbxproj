@@ -11,6 +11,11 @@
 		5D28350526568E090020409B /* SimpleCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28350226568E090020409B /* SimpleCamera.swift */; };
 		5D28350626568E090020409B /* SimpleCameraProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28350326568E090020409B /* SimpleCameraProtocol.swift */; };
 		5D28350826569C250020409B /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28350726569C250020409B /* CustomSegmentedControl.swift */; };
+		5D3F4E23265877200027F8C5 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F4E21265877200027F8C5 /* ActivityTableViewCell.swift */; };
+		5D3F4E24265877200027F8C5 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D3F4E22265877200027F8C5 /* ActivityTableViewCell.xib */; };
+		5D3F4E28265878A40027F8C5 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D3F4E27265878A40027F8C5 /* ActivityView.xib */; };
+		5D3F4E2A265878DC0027F8C5 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F4E29265878DC0027F8C5 /* ActivityView.swift */; };
+		5D3F4E2C26587CFB0027F8C5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F4E2B26587CFB0027F8C5 /* Activity.swift */; };
 		5D60C49425E2CA4900B3A8EA /* Anchorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5D60C49325E2CA4900B3A8EA /* Anchorage */; };
 		5D60C49A25E3047100B3A8EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C49925E3047100B3A8EA /* User.swift */; };
 		5D60C49D25E306D200B3A8EA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D60C49C25E306D200B3A8EA /* Data+Extension.swift */; };
@@ -51,6 +56,11 @@
 		5D28350226568E090020409B /* SimpleCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCamera.swift; sourceTree = "<group>"; };
 		5D28350326568E090020409B /* SimpleCameraProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCameraProtocol.swift; sourceTree = "<group>"; };
 		5D28350726569C250020409B /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		5D3F4E21265877200027F8C5 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		5D3F4E22265877200027F8C5 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		5D3F4E27265878A40027F8C5 /* ActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		5D3F4E29265878DC0027F8C5 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		5D3F4E2B26587CFB0027F8C5 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5D60C49925E3047100B3A8EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D60C49C25E306D200B3A8EA /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		5D60C4A025E30D5C00B3A8EA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -160,6 +170,7 @@
 				5DDFB8C225E186CB00EE5F3E /* Post.swift */,
 				5DDFB8E025E19A9D00EE5F3E /* Story.swift */,
 				5D60C49925E3047100B3A8EA /* User.swift */,
+				5D3F4E2B26587CFB0027F8C5 /* Activity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +193,10 @@
 				5DDFB8E325E19C9100EE5F3E /* CollectionViewCells */,
 				5DAAA5D425E68102009D98FB /* SearchBarContainerView.swift */,
 				5D28350726569C250020409B /* CustomSegmentedControl.swift */,
+				5D3F4E21265877200027F8C5 /* ActivityTableViewCell.swift */,
+				5D3F4E22265877200027F8C5 /* ActivityTableViewCell.xib */,
+				5D3F4E27265878A40027F8C5 /* ActivityView.xib */,
+				5D3F4E29265878DC0027F8C5 /* ActivityView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -303,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC532A125E173D40098D983 /* NewPost.storyboard in Resources */,
+				5D3F4E28265878A40027F8C5 /* ActivityView.xib in Resources */,
 				5DC5329725E173990098D983 /* Home.storyboard in Resources */,
+				5D3F4E24265877200027F8C5 /* ActivityTableViewCell.xib in Resources */,
 				5DA03DC025E16E33000C8140 /* LaunchScreen.storyboard in Resources */,
 				5DA03DBD25E16E33000C8140 /* Assets.xcassets in Resources */,
 				5DC5329E25E173BB0098D983 /* Activity.storyboard in Resources */,
@@ -321,6 +338,7 @@
 			files = (
 				5DA03DB825E16E32000C8140 /* HomeViewController.swift in Sources */,
 				5D60C49D25E306D200B3A8EA /* Data+Extension.swift in Sources */,
+				5D3F4E23265877200027F8C5 /* ActivityTableViewCell.swift in Sources */,
 				5D771A432654019400840EAD /* PhotoLibraryViewController.swift in Sources */,
 				5D771A3D2654011700840EAD /* NewPostPageViewController.swift in Sources */,
 				5D28350526568E090020409B /* SimpleCamera.swift in Sources */,
@@ -340,10 +358,12 @@
 				5D60C4AD25E3510200B3A8EA /* HomeControllerViewModel.swift in Sources */,
 				5DA03DB625E16E32000C8140 /* SceneDelegate.swift in Sources */,
 				5DDFB8F025E19CDE00EE5F3E /* PostCollectionViewCell.swift in Sources */,
+				5D3F4E2C26587CFB0027F8C5 /* Activity.swift in Sources */,
 				5DDFB8DA25E199A200EE5F3E /* PostRequest.swift in Sources */,
 				5D28350626568E090020409B /* SimpleCameraProtocol.swift in Sources */,
 				5DC532AC25E174460098D983 /* NewPostViewController.swift in Sources */,
 				5D60C4A125E30D5C00B3A8EA /* UIImageView+Extension.swift in Sources */,
+				5D3F4E2A265878DC0027F8C5 /* ActivityView.swift in Sources */,
 				5D771A45265403ED00840EAD /* TabBarDelegate.swift in Sources */,
 				5DDFB8E125E19A9D00EE5F3E /* Story.swift in Sources */,
 				5D28350826569C250020409B /* CustomSegmentedControl.swift in Sources */,
